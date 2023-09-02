@@ -1,5 +1,5 @@
 import { assertEquals } from 'std/assert/assert_equals.ts'
-import NetUtil from '~/net/net_util.ts'
+import { NetUtil } from '../../mod.ts'
 
 Deno.test('isNetPort', () => {
   assertEquals(NetUtil.isNetPort(0), true)

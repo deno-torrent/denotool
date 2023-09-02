@@ -1,6 +1,6 @@
 import { assertEquals, assertThrows } from 'std/assert/mod.ts'
-import BitArray from '~/bytes/bit_array.ts'
-import BytesUtil from '~/bytes/bytes_util.ts'
+import { BytesUtil } from '~/bytes/bytes_util.ts'
+import { BitArray } from '../../mod.ts'
 
 Deno.test('test bit array', () => {
   const bitArray = BitArray.fromInt(0b10101010)

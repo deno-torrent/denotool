@@ -151,4 +151,4 @@ const NetUtil = {
   getMacAddr
 }
 
-export default NetUtil
+export { NetUtil }

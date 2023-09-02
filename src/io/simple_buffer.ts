@@ -1,6 +1,6 @@
 import { Buffer } from 'std/io/buffer.ts'
 
-export default class SimpleBuffer extends Buffer {
+export class SimpleBuffer extends Buffer {
   /**
    * read len bytes from buffer
    * @param len  number of bytes to read

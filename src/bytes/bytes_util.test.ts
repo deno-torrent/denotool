@@ -1,5 +1,5 @@
 import { assertEquals } from 'std/assert/mod.ts'
-import BytesUtil from '~/bytes/bytes_util.ts'
+import { BytesUtil } from '../../mod.ts'
 
 Deno.test('test Unit8Array xor', () => {
   assertEquals(BytesUtil.xor(Uint8Array.from([1, 2, 3]), Uint8Array.from([1, 2, 3])), Uint8Array.from([0, 0, 0]))

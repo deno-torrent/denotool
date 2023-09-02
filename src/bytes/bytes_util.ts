@@ -135,4 +135,4 @@ const BytesUtil = {
   chunkBytes
 }
 
-export default BytesUtil
+export { BytesUtil }

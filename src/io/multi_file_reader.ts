@@ -5,7 +5,7 @@ import { Reader } from 'std/types.d.ts'
 /**
  * MultiFileReader read multiple files as one file
  */
-export default class MultiFileReader implements Reader {
+export class MultiFileReader implements Reader {
   readonly #buf: Buffer = new Buffer()
   readonly #rd = new BufReader(this.#buf)
   readonly #files: string[]

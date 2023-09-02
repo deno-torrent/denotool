@@ -1,3 +1,3 @@
 const hashUtil = {}
 
-export default hashUtil
+export { hashUtil }
