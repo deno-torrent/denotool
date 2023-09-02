@@ -1,0 +1,14 @@
+{
+  "imports": {
+    "std/": "https://deno.land/std@0.201.0/",
+    "~/": "./src/"
+  },
+  "tasks": {
+    "test": "deno test -A --unstable"
+  },
+  "test": {
+    "include": [
+      "./src"
+    ]
+  }
+}
