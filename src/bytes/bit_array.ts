@@ -1,4 +1,4 @@
-import { BytesUtil } from '~/bytes/bytes_util.ts'
+import { BytesUtil } from './bytes_util.ts'
 
 /**
  * A bit array is an array data structure that compactly stores bits. It can be used to implement a simple set data structure.
