@@ -4,6 +4,7 @@
  * @returns true if the port is valid, otherwise return false
  */
 function isNetPort(port: number): boolean {
+  if (!Number.isInteger(port)) return false
   return port >= 0 && port <= 65535
 }
 
