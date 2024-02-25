@@ -1,7 +1,4 @@
-import { decode as hexDecode, encode as hexEncode } from 'std/encoding/hex.ts'
-
-const td = new TextDecoder()
-const te = new TextEncoder()
+import { decodeHex, encodeHex } from 'std/encoding/hex.ts'
 
 /**
  * array1 xor array2, if array1.length !== array2.length, min(array1.length, array2.length) will be used
@@ -66,7 +63,7 @@ function binStr2Bytes(value: string) {
  * @returns
  */
 function bytes2Int(value: Uint8Array) {
-  return parseInt(bytes2HexStr(value), 16)
+  return parseInt(encodeHex(value), 16)
 }
 
 /**
@@ -80,20 +77,22 @@ function int2Bytes(value: number) {
 
 /**
  * convert Uint8Array to hex string
+ * @deprecated use std/encoding/hex.ts encodeHex instead
  * @param value
  * @returns
  */
 function bytes2HexStr(value: Uint8Array) {
-  return td.decode(hexEncode(value))
+  return encodeHex(value)
 }
 
 /**
  * convert hex string to Uint8Array
+ * @deprecated use std/encoding/hex.ts decodeHex instead
  * @param value
  * @returns
  */
 function hexStr2Bytes(value: string) {
-  return hexDecode(te.encode(value))
+  return decodeHex(value)
 }
 
 /**

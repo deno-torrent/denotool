@@ -1,6 +1,6 @@
 import { BufReader } from 'std/io/buf_reader.ts'
 import { Buffer } from 'std/io/buffer.ts'
-import { Reader } from 'std/types.d.ts'
+import { Reader } from 'std/io/mod.ts'
 
 /**
  * MultiFileReader read multiple files as one file

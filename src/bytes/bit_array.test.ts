@@ -1,4 +1,5 @@
 import { assertEquals, assertThrows } from 'std/assert/mod.ts'
+
 import { BitArray, BytesUtil } from '../../mod.ts'
 
 Deno.test('test bit array', () => {
